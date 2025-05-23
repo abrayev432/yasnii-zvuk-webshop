@@ -19,9 +19,13 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="bg-slate-800 text-white px-3 py-2 rounded text-sm font-medium">
-              Ясный звук
-            </div>
+            <a href="/" className="block">
+              <img 
+                src="/lovable-uploads/34428aae-7942-4dc1-93f5-152a36a1ef01.png" 
+                alt="Ясный звук" 
+                className="h-12" 
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
