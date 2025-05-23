@@ -1,26 +1,265 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>yasnii-zvuk-webshop</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="yasnii-zvuk-webshop" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Ясный звук - Слуховые аппараты</title>
+    <meta name="description" content="Магазин слуховых аппаратов Ясный звук" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
-
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <img src="logo.png" alt="Ясный звук" class="logo-image" />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#products" class="nav-item">Продукция</a>
+            <a href="#services" class="nav-item">Услуги</a>
+            <a href="#reviews" class="nav-item">Отзывы</a>
+            <a href="#faq" class="nav-item">Вопросы</a>
+            <a href="#contacts" class="nav-item">Контакты</a>
+          </nav>
+
+          <!-- Contact Info & CTA -->
+          <div class="contact-info">
+            <div class="phone-number">
+              <i class="fa-solid fa-phone"></i>
+              <span>+7 (495) 123-45-67</span>
+            </div>
+            <button class="cta-button">Записаться на прием</button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-button" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+          <nav class="mobile-nav-content">
+            <a href="#products" class="nav-item">Продукция</a>
+            <a href="#services" class="nav-item">Услуги</a>
+            <a href="#reviews" class="nav-item">Отзывы</a>
+            <a href="#faq" class="nav-item">Вопросы</a>
+            <a href="#contacts" class="nav-item">Контакты</a>
+            <div class="mobile-phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>+7 (495) 123-45-67</span>
+            </div>
+            <button class="cta-button mobile-cta">Записаться на прием</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Верните радость общения с близкими</h1>
+            <p>Современные слуховые аппараты от ведущих производителей с профессиональной настройкой</p>
+            <div class="hero-buttons">
+              <button class="primary-button">Подобрать слуховой аппарат</button>
+              <button class="secondary-button">Бесплатная консультация</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="hearing-aid.png" alt="Современный слуховой аппарат" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Наши услуги</h2>
+          <p>Полный спектр услуг для восстановления и улучшения вашего слуха</p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3>Диагностика слуха</h3>
+            <p>Профессиональная аудиометрия на современном оборудовании</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <h3>Настройка аппаратов</h3>
+            <p>Индивидуальная настройка под ваши потребности</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Консультации</h3>
+            <p>Бесплатные консультации опытных специалистов</p>
+          </div>
+          
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+            <h3>Гарантия</h3>
+            <p>Расширенная гарантия на все слуховые аппараты</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Наша продукция</h2>
+          <p>Слуховые аппараты от ведущих мировых производителей</p>
+        </div>
+        
+        <div class="products-grid">
+          <!-- Actual product items would go here -->
+          <div class="product-card">
+            <img src="product1.jpg" alt="Слуховой аппарат 1" class="product-image">
+            <h3>Внутриушной аппарат</h3>
+            <p>Незаметный слуховой аппарат с отличным качеством звука</p>
+            <div class="product-price">от 25 000 ₽</div>
+            <button class="product-button">Подробнее</button>
+          </div>
+          
+          <div class="product-card">
+            <img src="product2.jpg" alt="Слуховой аппарат 2" class="product-image">
+            <h3>Заушной аппарат</h3>
+            <p>Мощный и надежный аппарат для любой степени потери слуха</p>
+            <div class="product-price">от 30 000 ₽</div>
+            <button class="product-button">Подробнее</button>
+          </div>
+          
+          <div class="product-card">
+            <img src="product3.jpg" alt="Слуховой аппарат 3" class="product-image">
+            <h3>Цифровой аппарат</h3>
+            <p>Современная цифровая обработка звука</p>
+            <div class="product-price">от 45 000 ₽</div>
+            <button class="product-button">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <h2>Почему выбирают нас</h2>
+          <div class="section-line"></div>
+          <p>Наши преимущества, которые ценят клиенты</p>
+        </div>
+        
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Опыт более 15 лет</h3>
+            <p>Наши специалисты имеют многолетний опыт работы с пациентами</p>
+          </div>
+          
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3>Ведущие бренды</h3>
+            <p>Работаем только с проверенными производителями</p>
+          </div>
+          
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Быстрая настройка</h3>
+            <p>Настройка и адаптация аппарата в день обращения</p>
+          </div>
+          
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Индивидуальный подход</h3>
+            <p>Учитываем особенности каждого пациента</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="footer-logo">Ясный звук</div>
+            <p>Профессиональный центр слухопротезирования с многолетним опытом работы</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Контакты</h3>
+            <div class="footer-contacts">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+7 (495) 123-45-67</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@yasnyzvuk.ru</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>г. Москва, ул. Примерная, д. 123</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Режим работы</h3>
+            <div class="working-hours">
+              <div class="working-hours-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <p>Пн-Пт: 9:00 - 18:00</p>
+                  <p>Сб: 10:00 - 16:00</p>
+                  <p>Вс: выходной</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Навигация</h3>
+            <div class="footer-nav">
+              <a href="#products">Продукция</a>
+              <a href="#services">Услуги</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#faq">Вопросы</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="copyright">
+          <p>© 2025 Ясный звук. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
